@@ -158,4 +158,4 @@ function checkAddServerData (ip, message) {
     })
 }
 
-client.login('Njk5NzQyNTk3MTE5MzQ0NzEy.XpY0Ew.m3iXBDQCXHtMh4FkkYTZfz7d2B0');
+client.login('bot_token_here');

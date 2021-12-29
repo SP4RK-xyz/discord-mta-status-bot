@@ -1,6 +1,6 @@
 const { Sequelize, Op, Model, DataTypes } = require('sequelize');
 
-const sequelize = new Sequelize('admin_mtabot', 'admin_mtabot', 'WTVcG3Rxyh', {
+const sequelize = new Sequelize('db_namehere', 'db_userhere', 'db_passwdhere', {
     dialect: 'mysql',
     host: '127.0.0.1'
 });
@@ -31,6 +31,7 @@ const Server = sequelize.define('Server', {
     modelName: 'Server'
 });
 
+// Reset database / First upload
 /* sequelize.sync({force: true}); */
 
 exports.addServer = async function (ip, port, guildid, channelid, messageid) {
